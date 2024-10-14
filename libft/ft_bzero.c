@@ -25,3 +25,15 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+/*
+#include <stdio.h>
+int main()
+{
+	int n = 3;
+	char str[n];
+
+	ft_bzero((void *)str ,n);
+	printf("%s",str);
+	return 0;
+}
+*/

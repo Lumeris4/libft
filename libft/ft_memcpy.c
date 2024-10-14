@@ -40,7 +40,6 @@ int main() {
 	char src[] = "Salut!";
 	char dest[10];
 
-	// Utilisation de memcpy pour copier les données de src vers dest
 	ft_memcpy(dest, src, strlen(src) + 1); // On inclut le caractère nul '\0'
 	printf("Dest: %s\n", dest);
 	

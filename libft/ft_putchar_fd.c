@@ -16,3 +16,11 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+/*
+#include <fcntl.h>
+int main (void)
+{
+	int fd = open("test.txt", O_CREAT | O_RDWR, 0644);
+	ft_putendl_fd('c', fd);
+}
+*/

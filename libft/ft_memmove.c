@@ -57,8 +57,7 @@ int main()
 {
 	char str[] = "Hello, World!";
 	char str2[] = "Hello, World!";
-	
-	// Utilisation de ft_memmove pour gérer un chevauchement de mémoire
+
 	ft_memmove(str + 6, str, 6);  // Déplacer "Hello," à la fin de "World!"
 	memmove(str2 + 6, str2, 6);
 	printf("Result: %s\n", str);

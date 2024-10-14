@@ -23,3 +23,11 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	printf("%d\n",ft_isalnum('c'));
+	printf("%d\n",ft_isalnum('\n'));
+}
+*/

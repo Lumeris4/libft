@@ -15,14 +15,24 @@
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;
-	unsigned char	*str;
+	char			*str;
 
 	i = 0;
-	str = (unsigned char *)s;
+	str = (char *)s;
 	while (i != n)
 	{
-		str[i] = (unsigned char)c;
+		str[i] = (char)c;
 		i++;
 	}
 	return (s);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char str[6] = "essai";
+	size_t n = 5;
+	ft_memset((void *)str, '4',n);
+	printf("%s",str);
+}
+*/

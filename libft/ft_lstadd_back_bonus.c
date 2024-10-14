@@ -26,3 +26,40 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	else if (lst != NULL)
 		*lst = new;
 }
+/*
+#include <stdio.h>
+void print_list(t_list *lst)
+{
+	while (lst)
+	{
+		printf("%d -> ", *(int *)lst->content);
+		lst = lst->next;
+	}
+	printf("NULL\n");
+}
+
+int main()
+{
+	int i = 0;
+	t_list *liste = NULL;
+
+	while (i < 5)
+	{
+		int *value = malloc(sizeof(int));
+		*value = i;
+		ft_lstadd_front(&liste, ft_lstnew((void *)value));
+		i++;
+	}
+
+	printf("Contenu de la liste : ");
+	print_list(liste);
+
+	int *value = malloc(sizeof(int));
+	*value = i;
+	ft_lstadd_back(&liste, ft_lstnew((void *)value));
+	printf("Liste apres application de la fonction : ");
+	print_list(liste);
+
+	return 0;
+}
+*/

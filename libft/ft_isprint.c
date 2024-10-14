@@ -19,3 +19,11 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	printf("%d\n",ft_isprint('1'));
+	printf("%d\n",ft_isprint('\n'));
+}
+*/

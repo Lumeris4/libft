@@ -22,3 +22,11 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	printf("%d\n",ft_isalpha('c'));
+	printf("%d\n",ft_isalpha('\n'));
+}
+*/

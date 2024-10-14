@@ -27,3 +27,15 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+/*
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char c = 'b';
+	char s[9] = "laboulais";
+
+	printf("%s\n",ft_strchr(s,c));
+	printf("%s\n",strchr(s,c));
+}
+*/
