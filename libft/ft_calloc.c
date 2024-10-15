@@ -33,8 +33,8 @@ int main() {
     int i = 0;
 
     arr = (int*) ft_calloc(n, sizeof(int));
-    if (arr == NULL) 
-        return NULL;
+    if (arr == 0) 
+        return 0;
 
     while (i < n)
     {
