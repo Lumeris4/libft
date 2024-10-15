@@ -54,7 +54,7 @@ int main()
 	printf("Contenu avant suppression :");
 	print_list(liste);
 	ft_lstdelone(liste, del_elm);
-	liste = liste->next;
+	liste = NULL;
 	printf("Contenu apres suppression :");
 	print_list(liste);
 	while (liste)
