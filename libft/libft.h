@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
@@ -24,6 +25,14 @@ typedef struct s_list
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
+# endif
+
+# ifndef LOWERCASE
+#  define LOWERCASE "0123456789abcdef"
+# endif
+
+# ifndef UPPERCASE
+#  define UPPERCASE "0123456789ABCDEF" 
 # endif
 
 int		ft_atoi(const char *nptr);
@@ -70,4 +79,14 @@ t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_lstsize(t_list *lst);
 char	*get_next_line(int fd);
+int	ft_printf(const char *s, ...);
+int	ft_decimal(int integer, int size);
+int	pourcent(int size);
+int	charachter(int c, int size);
+int	ft_unsigned_decimal(unsigned int integer, int size);
+int	num_hexa_upper(unsigned int num, int size);
+int	num_hexa_lower(unsigned int num, int size);
+int	ft_integer(int integer, int size);
+int	ft_pointeur_hexa(void *ptr, int size);
+int	string(char *str, int size);
 #endif
